@@ -1,0 +1,141 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px; /* Base font size */
+    background-image: url('background.jpg'); /* Background image */
+    background-size: cover;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 2rem 0; /* Adjusted padding */
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem; /* Increased font size */
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.5rem; /* Increased font size */
+}
+
+.name {
+    font-family: 'Brisk Script', cursive; /* Brisk Script font */
+    font-size: 2rem;
+    color: #f7a800;
+}
+
+#skills {
+    padding: 3rem 0; /* Increased padding */
+    background: #b3d9ff; /* Light blue background */
+}
+
+#skills h2 {
+    text-align: center;
+    margin-bottom: 2rem; /* Increased margin */
+    font-size: 2.5rem; /* Increased font size */
+    color: #333;
+}
+
+.skill-box {
+    background: #fff;
+    border-radius: 8px;
+    margin: 1.5rem 0; /* Increased margin */
+    padding: 1.5rem; /* Increased padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box h3 {
+    font-size: 1.8rem; /* Increased font size */
+}
+
+.skill-box p {
+    font-size: 1.2rem; /* Increased font size */
+}
+
+.skill-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#projects {
+    padding: 3rem 0; /* Increased padding */
+    background: #fff;
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 2rem; /* Increased margin */
+    font-size: 2.5rem; /* Increased font size */
+    color: #333;
+}
+
+.project {
+    background: #e0e0e0;
+    border-radius: 8px;
+    margin: 1.5rem 0; /* Increased margin */
+    padding: 1.5rem; /* Increased padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project h3 {
+    font-size: 1.8rem; /* Increased font size */
+}
+
+.project p {
+    font-size: 1.2rem; /* Increased font size */
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0; /* Adjusted padding */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem; /* Font size for footer */
+}
+
+/* Animation example */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header, #skills, #projects, footer {
+    animation: fadeIn 2s ease-in-out;
+}
